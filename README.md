@@ -13,12 +13,18 @@
 - 安装脚本自动配置防火墙、服务依赖和启动类型
 - 一个压缩包，双击 `install.cmd` 即可完成安装
 
+## 系统要求
+
+- Windows 10 / 11（推荐）
+- Windows 7 SP1 及以上也可以运行，需要 PowerShell 3.0+ 和 .NET Framework 4.5+
+- 安装与卸载需要管理员权限
+
 ## 快速开始
 
 ### 使用发布包
 
 1. 从 [Releases](https://github.com/nuomilee/audio-share-windows-service/releases/latest)
-   下载 `audio-share-service-1.0.0-win64.zip` 并解压
+   下载 `audio-share-service-1.0.1-win64.zip` 并解压
 2. 右键 `install.cmd` → **以管理员身份运行**
 3. 手机 App 连接 `电脑IP:65530`
 

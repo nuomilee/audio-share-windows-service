@@ -1,7 +1,7 @@
 ﻿# Builds a self-contained release folder and zip under dist\.
 # The release can be copied to another Windows machine and installed with install.cmd.
 param(
-    [string]$Version = '1.0.0'
+    [string]$Version = '1.0.1'
 )
 
 $ErrorActionPreference = 'Stop'

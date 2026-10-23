@@ -1,5 +1,14 @@
 # 更新日志
 
+## 1.0.1 — 2026-10-23
+
+兼容性修复：
+
+- 防火墙规则改用 `netsh`，不再依赖 `NetSecurity` 模块（Windows 7 等旧系统也可安装）
+- 端口占用检查改用 `netstat`，不再依赖 `Get-NetTCPConnection`
+- 脚本兼容 Windows 7 SP1 + PowerShell 3.0，并检查 .NET Framework 4.5+
+- 服务描述改用 `sc.exe` 设置，去掉 `New-Service -Description` 的版本限制
+
 ## 1.0.0 — 2026-10-23
 
 首个可用版本：

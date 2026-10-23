@@ -106,3 +106,12 @@ sc.exe qc AudioShareServer
 sc.exe qfailure AudioShareServer
 Get-Content "C:\Services\audio-share\logs\as-cmd-$(Get-Date -f yyyyMMdd).log" -Tail 100
 ```
+
+## Windows 7 / 旧系统
+
+- 安装脚本需要 **PowerShell 3.0+** 和 **.NET Framework 4.5+**
+- 旧系统没有 `Get-NetFirewallRule`、`Get-NetTCPConnection` 也没关系：
+  1.0.1 起防火墙改用 `netsh`、端口检查改用 `netstat`
+- 查端口：`netstat -ano | findstr :65530`
+- 查防火墙规则：`netsh advfirewall firewall show rule name="Audio Share Server TCP 65530"`
+- 删除防火墙规则：`netsh advfirewall firewall delete rule name="Audio Share Server TCP 65530"`

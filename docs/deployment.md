@@ -12,7 +12,7 @@
   powershell -ExecutionPolicy Bypass -File scripts\package.ps1
   ```
 
-  得到 `dist\audio-share-service-1.0.0-win64.zip`（约 1 MB）
+  得到 `dist\audio-share-service-1.0.1-win64.zip`（约 1 MB）
 - 用远程桌面文件传输 / 共享目录 / U 盘把 zip 复制到目标电脑
 - 记住目标电脑上旧启动方式的启动项位置（下一步清理用）
 
@@ -50,7 +50,7 @@ Get-ScheduledTask |
 
 ## 2. 解压并安装
 
-把 zip 解压到任意目录（例如 `C:\Services\audio-share-service-1.0.0`），然后：
+把 zip 解压到任意目录（例如 `C:\Services\audio-share-service-1.0.1`），然后：
 
 - 右键 **`install.cmd`** → **以管理员身份运行**
 - UAC 弹窗点“是”，会新开一个管理员窗口显示过程

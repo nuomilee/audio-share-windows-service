@@ -17,7 +17,8 @@
 
 ### 使用发布包
 
-1. 解压 `audio-share-service-1.0.0-win64.zip`
+1. 从 [Releases](https://github.com/nuomilee/audio-share-windows-service/releases/latest)
+   下载 `audio-share-service-1.0.0-win64.zip` 并解压
 2. 右键 `install.cmd` → **以管理员身份运行**
 3. 手机 App 连接 `电脑IP:65530`
 
@@ -54,7 +55,7 @@ Get-Content "C:\Services\audio-share\logs\as-cmd-$(Get-Date -f yyyyMMdd).log" -T
 ## 目录
 
 ```
-audio-share-service/
+audio-share-windows-service/
 ├─ src/          # 服务宿主源码
 ├─ config/       # 默认配置
 ├─ scripts/      # 构建、打包、安装、卸载
